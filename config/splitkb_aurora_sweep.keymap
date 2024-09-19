@@ -13,6 +13,11 @@
     // tapping-term-ms = <200>;
 };
 
+&sk {
+    quick-release;
+    release-after-ms = <700>;
+};
+
 / {
     behaviors {
         ad_i: adaptive_i {
