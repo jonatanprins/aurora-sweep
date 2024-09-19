@@ -59,6 +59,22 @@
             bindings = <&sl 3>;
             slow-release;
         };
+
+        ret {
+            bindings = <&kp RET>;
+            key-positions = <16 17 18>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <11 12 13>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+            timeout-ms = <60>;
+        };
     };
 
     keymap {
@@ -66,10 +82,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W          &kp F         &kp P         &kp B    &kp J  &kp L         &kp U         &kp Y          &kp SQT
-&kp A  &hmrl LCTRL R  &hmrl LALT S  &hmrl LGUI T  &kp G    &kp M  &hmrr RGUI N  &hmrr RALT E  &hmrr RCTRL I  &kp O
-&kp Z  &kp X          &kp C         &kp D         &kp V    &kp K  &kp H         &kp COMMA     &kp DOT        &kp SEMI
-&sl 2  &sk LSHFT                                                                              &kp SPACE      &sl 1
+&kp Q  &kp W      &kp F  &kp P         &kp B    &kp J  &kp L  &kp U      &kp Y      &kp SQT
+&kp A  &kp R      &kp S  &hmrl LGUI T  &kp G    &kp M  &kp N  &kp E      &ad_i      &kp O
+&kp Z  &kp X      &kp C  &kp D         &kp V    &kp K  &kp H  &kp COMMA  &kp DOT    &kp SEMI
+&sl 2  &sk LSHFT                                                         &kp SPACE  &sl 1
             >;
         };
 
