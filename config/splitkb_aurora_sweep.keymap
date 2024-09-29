@@ -91,7 +91,13 @@
 
         escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <1 3>;
+            key-positions = <1 2>;
+            timeout-ms = <60>;
+        };
+
+        return {
+            bindings = <&kp RETURN>;
+            key-positions = <2 3>;
             timeout-ms = <60>;
         };
     };
@@ -119,10 +125,10 @@
 
         right_layer {
             bindings = <
-&trans     &trans     &kp COLON  &kp ESCAPE  &trans    &kp TAB  &trans    &kp UP_ARROW  &trans     &kp LA(BSPC)
-&sk LSHFT  &sk LCTRL  &sk LALT   &sk LGUI    &trans    &trans   &kp LEFT  &kp DOWN      &kp RIGHT  &kp BSPC
-&trans     &trans     &trans     &trans      &trans    &trans   &trans    &trans        &trans     &kp ENTER
-&trans     &trans                                                                       &trans     &trans
+&trans      &trans      &kp LA(RS(ESCAPE))  &kp LA(ESCAPE)  &trans        &kp PG_UP  &kp BSPC  &kp UP_ARROW  &trans     &kp LA(BSPC)
+&sk LSHFT   &sk LCTRL   &sk LALT            &sk LGUI        &trans        &kp PG_DN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp RET
+&kp LA(N1)  &kp LA(N2)  &kp LA(N3)          &kp LA(N4)      &kp LA(N5)    &trans     &kp TAB   &trans        &trans     &kp ENTER
+&trans      &trans                                                                                           &trans     &trans
             >;
         };
 
