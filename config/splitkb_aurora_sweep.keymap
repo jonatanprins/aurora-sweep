@@ -134,10 +134,10 @@
 
         right_layer {
             bindings = <
-&trans      &trans      &kp LA(RS(ESCAPE))  &kp LA(ESCAPE)  &trans        &trans    &kp PG_DN  &kp PG_UP  &trans     &kp LA(BSPC)
-&sk LSHFT   &sk LCTRL   &sk LALT            &sk LGUI        &trans        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
-&kp ESCAPE  &kp LA(N2)  &kp LA(N3)          &kp LA(N4)      &kp LA(N5)    &trans    &kp BSPC   &kp TAB    &trans     &kp ENTER
-&trans      &trans                                                                                        &trans     &trans
+&trans      &trans     &kp LA(RS(ESCAPE))  &kp LA(ESCAPE)  &trans    &trans    &kp BSPC   &trans     &kp TAB    &kp LA(BSPC)
+&sk LSHFT   &sk LCTRL  &sk LALT            &sk LGUI        &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
+&kp ESCAPE  &trans     &trans              &trans          &trans    &trans    &kp PG_DN  &kp PG_UP  &trans     &kp ENTER
+&trans      &trans                                                                                   &trans     &trans
             >;
         };
 
