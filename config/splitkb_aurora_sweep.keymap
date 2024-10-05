@@ -73,7 +73,7 @@
         combo_layer_num {
             timeout-ms = <50>;
             key-positions = <30 33>;
-            bindings = <&sl 4>;
+            bindings = <&sl 6>;
             slow-release;
         };
 
@@ -110,7 +110,7 @@
 &kp Q  &kp W      &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y      &kp SQT
 &kp A  &kp R      &kp S  &kp T  &kp G    &kp M  &kp N  &kp E      &ad_i      &kp O
 &kp Z  &kp X      &kp C  &kp D  &kp V    &kp K  &kp H  &kp COMMA  &kp DOT    &kp SEMI
-&sl 3  &sk LSHFT                                                  &kp SPACE  &sl 2
+&sl 5  &sk LSHFT                                                  &kp SPACE  &sl 4
             >;
         };
 
@@ -119,7 +119,25 @@
 &kp W  &kp L      &kp Y  &kp P  &kp B    &kp Z  &kp F  &kp O     &kp U      &kp SQT
 &kp C  &kp R      &kp S  &kp T  &kp G    &kp M  &kp N  &kp E     &ad_i      &kp A
 &kp Q  &kp J      &kp V  &kp D  &kp K    &kp X  &kp H  &kp FSLH  &kp COMMA  &kp DOT
-&sl 3  &sk LSHFT                                                 &kp SPACE  &sl 2
+&sl 5  &sk LSHFT                                                 &kp SPACE  &sl 4
+            >;
+        };
+
+        gallium_v2 {
+            bindings = <
+&kp B  &kp L      &kp D  &kp C  &kp V    &kp J  &kp F  &kp O    &kp U      &kp COMMA
+&kp N  &kp R      &kp T  &kp S  &kp G    &kp Y  &kp H  &kp A    &kp E      &kp I
+&kp X  &kp Q      &kp M  &kp W  &kp Z    &kp K  &kp P  &kp SQT  &kp SEMI   &kp DOT
+&sl 5  &sk LSHFT                                                &kp SPACE  &sl 4
+            >;
+        };
+
+        aptmak {
+            bindings = <
+&kp V     &kp W  &kp F  &kp P  &kp B    &kp J  &kp L  &kp U      &kp Y      &kp SQT
+&kp R     &kp S  &kp T  &kp H  &kp K    &kp X  &kp N  &kp A      &kp I      &kp O
+&kp FSLH  &kp C  &kp G  &kp D  &kp Q    &kp Z  &kp M  &kp COMMA  &kp DOT    &kp EQUAL
+&sl 5     &kp E                                                  &kp SPACE  &sl 4
             >;
         };
 
@@ -134,10 +152,10 @@
 
         right_layer {
             bindings = <
-&trans      &trans     &kp LA(RS(ESCAPE))  &kp LA(ESCAPE)  &trans    &trans    &kp BSPC   &trans     &kp TAB    &kp LA(BSPC)
-&sk LSHFT   &sk LCTRL  &sk LALT            &sk LGUI        &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
-&kp ESCAPE  &trans     &trans              &trans          &trans    &trans    &kp PG_DN  &kp PG_UP  &trans     &kp ENTER
-&trans      &trans                                                                                   &trans     &trans
+&trans      &trans     &kp LA(RS(ESCAPE))  &kp LA(ESCAPE)  &trans    &trans    &kp BSPC  &trans  &trans     &kp LA(BSPC)
+&sk LSHFT   &sk LCTRL  &sk LALT            &sk LGUI        &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp RET
+&kp ESCAPE  &trans     &trans              &trans          &trans    &trans    &kp TAB   &trans  &trans     &kp ENTER
+&trans      &trans                                                                               &trans     &trans
             >;
         };
 
@@ -152,7 +170,7 @@
 
         tri_layer {
             bindings = <
-&kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4  &kp NUM_5    &trans  &tog 1     &trans        &trans      &trans
+&kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4  &kp NUM_5    &trans  &tog 1     &tog 2        &tog 3      &trans
 &kp F1      &kp F2      &kp F3      &kp F4     &kp F5       &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
 &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &kp F6     &kp F7       &trans  &kp PG_DN  &kp K_VOL_DN  &trans      &trans
 &trans      &trans                                                                           &trans      &trans
@@ -164,8 +182,8 @@
         compatible = "zmk,conditional-layers";
 
         menu {
-            if-layers = <2 3>;
-            then-layer = <5>;
+            if-layers = <4 5>;
+            then-layer = <7>;
         };
     };
 };
