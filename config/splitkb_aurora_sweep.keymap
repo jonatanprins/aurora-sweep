@@ -97,7 +97,7 @@
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <2 3>;
+            key-positions = <8 7>;
             timeout-ms = <60>;
         };
     };
