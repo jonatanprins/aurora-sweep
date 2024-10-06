@@ -103,13 +103,13 @@
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <15 25>;
+            key-positions = <13 3>;
             timeout-ms = <60>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <16 26>;
+            key-positions = <12 2>;
             timeout-ms = <60>;
         };
 
@@ -121,7 +121,7 @@
 
         dollar {
             bindings = <&kp DOLLAR>;
-            key-positions = <3 13>;
+            key-positions = <16 6>;
             timeout-ms = <60>;
         };
     };
@@ -176,10 +176,10 @@
 
         right_layer {
             bindings = <
-&trans      &trans     &trans    &trans    &trans    &trans    &kp BSPC   &trans     &trans     &trans
-&sk LSHFT   &sk LCTRL  &sk LALT  &sk LGUI  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET
-&kp ESCAPE  &trans     &trans    &kp TAB   &trans    &trans    &kp PG_DN  &kp PG_UP  &trans     &kp TAB
-&trans      &trans                                                                   &trans     &trans
+&trans      &trans     &trans    &trans    &trans    &trans  &kp BSPC   &kp UP     &trans     &trans
+&sk LSHFT   &sk LCTRL  &sk LALT  &sk LGUI  &trans    &trans  &kp LEFT   &kp DOWN   &kp RIGHT  &kp RET
+&kp ESCAPE  &trans     &trans    &kp TAB   &trans    &trans  &kp PG_DN  &kp PG_UP  &trans     &kp TAB
+&trans      &trans                                                                 &trans     &trans
             >;
         };
 
