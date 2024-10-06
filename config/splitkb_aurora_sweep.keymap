@@ -79,13 +79,13 @@
 
         command {
             bindings = <&kp COLON>;
-            key-positions = <26 28>;
+            key-positions = <28 27>;
             timeout-ms = <60>;
         };
 
         search {
             bindings = <&kp SLASH>;
-            key-positions = <21 23>;
+            key-positions = <21 22>;
             timeout-ms = <60>;
         };
 
